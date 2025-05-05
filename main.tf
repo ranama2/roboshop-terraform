@@ -20,7 +20,7 @@ resource "aws_instance" "instance" {
 
 resource "aws_route53_record" "record" {
   count = length(var.instances)
-  name    = "$var.instances[count.index]}-${var.env}"
+  name    = "${var.instances[count.index]}-${var.env}"
   type    = "A"
   zone_id = var.zone_id
   ttl = 10
