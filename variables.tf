@@ -1,11 +1,11 @@
 
 
 variable "ami_id" {
-  default = ami-09c813fb71547fc4f
+  default = "ami-09c813fb71547fc4f"
 }
 
 variable "instance_type" {
-  default = t2.micro
+  default = "t2.micro"
 }
 
 variable "vpc_security_group_ids" {
@@ -31,5 +31,5 @@ variable "zone_id" {
 }
 
 variable "env" {
-  default = dev
+  default = "dev"
 }
